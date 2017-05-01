@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Angular</title>
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Love+Ya+Like+A+Sister" rel="stylesheet">
+    <link rel="stylesheet" href="todolist.css">
+  </head>
+
+
+  <body ng-app="myModule" ng-controller="myController">
+
+<div class="mainWrap">
+ <h2> My To-Do List</h2>
+
+    <input type="text" ng-model="task.name">
+    <button type="submit" ng-click="addTask(task)"> Add Task </button><br><br><hr>
+
+<div class="list" ng-repeat="task in toDoList">
+    <form>
+      <input type="checkbox" class="checkbox" ng-click="deleteTask(task)"> {{task.name}} <br>
+    </form>
+</div>
+
+  </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
