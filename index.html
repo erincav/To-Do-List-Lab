@@ -13,8 +13,10 @@
 <div class="mainWrap">
  <h2> My To-Do List</h2>
 
+<form>
     <input type="text" ng-model="task.name">
     <button type="submit" ng-click="addTask(task)"> Add Task </button><br><br><hr>
+</form>
 
 <div class="list" ng-repeat="task in toDoList">
     <form>

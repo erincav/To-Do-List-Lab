@@ -5,7 +5,7 @@ html{
 h2{
   font-family: 'Love Ya Like A Sister', cursive;
   font-size:40px;
-  margin: 10px;  
+  margin: 10px;
 }
 .mainWrap{
   background-color: white;
@@ -20,6 +20,7 @@ h2{
 .list{
   top-padding:10px;
 }
+
 
 form{
   text-align:left;
